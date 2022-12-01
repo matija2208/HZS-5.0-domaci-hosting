@@ -37,7 +37,7 @@ overflow: overlay;
          padding:5px;
         } 
         .reg-box2{
-          background-color: white;
+          background-color: rgb(255, 255, 255);
           border-radius: 30px; 
           margin:10px;
         padding: 20px;
@@ -217,4 +217,43 @@ overflow: overlay;
   #submitButon:hover{
     color:  rgba(56,136,255,1);
     border:1.5px solid rgba(56,136,255,1);
+  }
+
+  .formHeadings{
+    text-align: left;
+    vertical-align: middle;
+    padding-top: 25px; 
+    margin-left: 2%;
+  }
+  
+  .dropzone {
+    border: 4px dashed rgba(128,29,255,1);
+    height: 200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+    margin-bottom: 20px;
+  
+    color: rgba(128,29,255,1);
+    font-weight: bold;
+  }
+  
+  .info {
+    margin-top: 11%;
+  }
+  
+  .dropzone p {
+    /*height: 100%;*/
+    /*line-height: 200px;*/
+    margin: 0%;
+    text-align: center;
+    width: 100%
+  }
+  
+  .dropzone_narrate{
+      font-size: 30px;
+      color: rgba(128,29,255,1);
+      margin-top: 0px;
+      margin-left: 2px;
   }

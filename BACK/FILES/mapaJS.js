@@ -1,4 +1,4 @@
-const LINK = 'http://localhost';
+const LINK = 'http://404music.cf';
 const checkbox = document.getElementById('postCheck');
 var makingPost;
 
@@ -164,7 +164,7 @@ async function initMap() {
                                 icon: 'bendMarker.png'
                             });
                             const infowindow2 = new google.maps.InfoWindow({
-                                content: `<a class="objavaLink" href="../formazaispis/bend.html?${pins[i]._id}">${pins[i].BAND.ime}</a>`,
+                                content: `<a class="objavaLink" href="/bend.html?${pins[i]._id}">${pins[i].BAND.ime}</a>`,
                             });
     
                             marker2.addListener("click", () =>{
@@ -182,7 +182,7 @@ async function initMap() {
                                 icon: 'dogadjajMarker.png'
                             });
                             const infowindow2 = new google.maps.InfoWindow({
-                                content: `<a class="objavaLink" href="../formazaispis/nastup.html?${pins[i]._id}">${pins[i].KONCERT.naziv}</a>`,
+                                content: `<a class="objavaLink" href="/nastup.html?${pins[i]._id}">${pins[i].KONCERT.naziv}</a>`,
                             });
     
                             marker2.addListener("click", () =>{

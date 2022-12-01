@@ -1,0 +1,146 @@
+body{
+    background: rgb(128,29,255);
+    background: linear-gradient(153deg, rgba(128,29,255,1) 42%, rgba(56,136,255,1) 100%);
+    color: white;
+    overflow: overlay;
+   
+    margin: 0;
+    padding-top: 12%;
+    position: relative;
+    height: 100%;
+
+}
+.forma{
+    border: 7px dashed white;
+    border-radius: 50px;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 100px;
+     text-align: center;
+     padding:5px; 
+
+     position: relative;
+    } 
+.forma2{
+    background-color: white;
+    border-radius: 30px; 
+    margin:10px;
+    padding-top: 20px;
+}
+
+
+.slika{
+    width: 30%;
+    border-radius: 5px;
+    padding: 2px;
+    border: 5px solid  rgb(176, 131, 234);
+
+    position: absolute;
+    background: lightgray;
+    left: 15%;
+    top: 5%;
+
+}
+/* --------------------------------------------------------------------ispis */
+.naziv{
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(128,29,255);
+    padding-left:45% ;
+}
+.linija{
+    width: 90%;
+    height: 2px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgb(128,29,255);
+    background: linear-gradient(153deg, rgba(128,29,255,1) 15%, rgba(56,136,255,1) 100%);
+  }
+.opis-benda{
+    margin-top: 5%;
+    color: rgb(128,29,255);
+    text-align: justify;
+    padding: 5%;
+}
+.opis-text{
+    font-size: 25px;
+    color: rgb(128,29,255);
+    font-weight: bold;
+  }
+  .opis-benda p {
+    margin-top:10px ;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color:rgba(56,136,255,1);
+  }
+  .clanovi{
+    font-weight: bold;
+
+    font-size: 25px;
+  }
+  .kontakti{
+    background: rgb(128,29,255);
+    background: linear-gradient(153deg, rgba(128,29,255,1) 42%, rgba(56,136,255,1) 100%);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .kontakti p{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:white;
+  }
+/* --------------------------------------------------------------------skrol */
+body::-webkit-scrollbar {
+    width: 13px;         
+    background-color: transparent;    
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(217, 189, 255); 
+    background-color: transparent;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(203, 163, 255); 
+    border-radius: 20px; 
+    border: 5px solid transparent; 
+    border-right: 6px solid transparent; 
+  } 
+
+  .nazad-div{
+    padding: 30px;
+    
+  }
+  .nazad{
+    text-decoration: none;
+    color: rgba(128,29,255,1);
+    font-size: 20px;
+  }
+  .nazad:hover{
+    color:  rgba(56,136,255,1);
+  }
+  /* ------------------------------------------------------------------------- */
+  @media(max-width:900px){
+    .slika{
+      width: 56%;
+      left: 20%;
+    }
+    body{
+      padding-top: 30%;
+    }
+
+    .naziv{
+        text-align: center;
+        margin-top: 55%;
+        color: rgb(128,29,255);
+        padding: 0;
+    }
+    }

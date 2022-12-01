@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registracija.css">
+</head>
+<body>
+    <div class="reg-box">
+        <div class="reg-box2">   
+                <img src="media/logo-violet-gray.png" width="30%" height="30%">
+                <h1 class="reg-h1">KREIRAJTE VAS NALOG</h1>
+                <form class="ref-forma" id="forma">
+                    <!-- IME I PRE-->
+                    <label for="ime_input" class="reg-text"><u>Ime i prezime:</u></label> <br>
+                    <input class="polje_unos"type='text' id="ime_input" placeholder='Ime i prezime:'  /><br>
+                    <span class="RegexWarning hidden" id="ErrorImeWarning"> Pogrešan unos.</span> <br> <br> <br>
+                    <!-- korisnicko ime-->
+                    <label for="korisnickoIme_input" class="reg-text"><u>Korisnicko ime:</u></label> <br>
+                    <input class="polje_unos"type='text' id="korisnickoIme_input" placeholder='Korisničko ime:'  /><br>
+                    <span class="RegexWarning  hidden" id="EmptyNameWarning"> Molimo vas da unesete korisnicko ime.</span> <br>
+                    <span class="RegexWarning  hidden" id="ErrorNameWarning"> Ime sme sadrzati samo slova, brojeve i moze biti do 30 karaktera dugacko, bez razmaka.</span> <br>
+                    <span class="RegexWarning  hidden" id="SameNameWarning"> Ovo korisnicko ime je vec zauzeto.</span><br>
+                    <!-- MAIL-->
+                    <label for="mail_input" class="reg-text"><u>E-mail adresa:</u></label> <br>
+                    <input class="polje_unos"type='text' id="mail_input" placeholder='Email:'  /><br>
+                    <span class="RegexWarning  hidden" id="EmptyMailWarning"> Molimo vas da unesete e-mail adresu.</span> <br>
+                    <span class="RegexWarning  hidden" id="ErrorMailWarning"> Molimo vas da unesete vazecu e-mail adresu (npr. [name]@example.com).</span> <br>
+                    <span class="RegexWarning  hidden" id="SameMailWarning"> Nalog je vec registrovan na ovoj e-mail adresi.</span> <br>
+                    <!-- PASS-->
+                    <label for="pass_input" class="reg-text"><u>Lozinka naloga:</u></label> <br>
+                    <input class="polje_unos"type='password' id="pass_input" placeholder='Lozinka:'  /><br>
+                    <span class="RegexWarning  hidden" id="EmptyPassWarning"> Molimo vas da unesete lozinku vaseg naloga. Lozinka mora biti u ASCII formatu, takodje.</span> <br>
+                    <span class="RegexWarning  hidden" id="ErrorPassWarning"> Lozinka mora sadrzati najmanje 8 karaktera, jedan broj, jedno malo slovo i jedno veliko slovo.</span> <br> <br>
+                
+                    <label for="pass_repeat" class="reg-text"><u>Ponovite lozinku:</u></label> <br>
+                    <input class="polje_unos"type='password' id="pass_repeat" placeholder='Potvrdi lozinku:'  /><br>
+                    <span class="RegexWarning  hidden" id="EmptyRepeatWarning"> Molimo vas da ponovite lozinku.</span> <br>
+                    <span class="RegexWarning  hidden" id="ErrorRepeatWarning"> Lozinke nisu iste.</span> <br>
+
+                    <input class="dugme" type='button' value="REGISTRUJ SE" id="registracija" onclick="ValidirajRegister()" /><br>
+                    
+                  <div class="nazad-div">
+                    <a href="pocetna.html"  lass="dugme1" class="nazad">NAZAD</a>
+                  </div>
+                </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="registracija.js"></script>
+</body>
+</html>

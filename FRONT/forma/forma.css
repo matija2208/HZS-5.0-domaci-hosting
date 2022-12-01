@@ -1,0 +1,117 @@
+body{
+    background: rgb(128,29,255);
+    background: linear-gradient(153deg, rgba(128,29,255,1) 42%, rgba(56,136,255,1) 100%);
+    color: black;
+    overflow: overlay;
+    }
+    .reg-box{
+    border: 12px dashed white;
+    border-radius: 50px;
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 46px;
+     margin-bottom: 100px;
+     text-align: center;
+     padding:5px;
+    } 
+    .reg-box2{
+      background-color: white;
+      border-radius: 30px; 
+      margin:10px;
+    padding-top: 20px;
+    }
+    
+    .reg-h1{
+        font-size: 30px;
+        color: rgb(128,29,255) ;
+    }
+    .linija{
+      width: 90%;
+      height: 2px;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgb(128,29,255);
+      background: linear-gradient(153deg, rgba(128,29,255,1) 15%, rgba(56,136,255,1) 100%);
+    }
+    
+    .div-biranje{
+        margin-left: 10%;
+        text-align: left;
+        margin-bottom: 15px;
+        color: rgb(128,29,255);
+    }
+    .radio{
+        margin-top: 0;
+    }
+  
+    .polje_unos{
+      width: 80%;
+      height: 30px;
+      border-radius: 10px;
+      margin : 10px;
+      border:1px solid rgba(128,29,255,1) ;
+    }
+    
+    .dugmeObjavi{
+      border-radius: 10px;
+      padding:5px ;
+      padding-left:20px ;
+      padding-right:20px ;
+      margin-top: 20px;
+      border:1.5px solid rgba(128,29,255,1) ;
+      color:rgba(128,29,255,1) ;
+      font-size: 20px;
+    }
+    .dugmeObjavi:hover{
+      color:  rgba(56,136,255,1);
+      border:1.5px solid rgba(56,136,255,1);
+    }
+    .nazad-div{
+      text-align: left;
+      padding: 30px;
+      padding-left: 10%;
+      
+    }
+    .nazad{
+      text-decoration: none;
+      color: rgba(128,29,255,1);
+      font-size: 20px;
+    }
+    .nazad:hover{
+      color:  rgba(56,136,255,1);
+    }
+    
+  /* -------------------------------------skrol---------------------------------------------------   */
+    body::-webkit-scrollbar {
+      width: 13px;         
+      background-color: transparent;    
+    }
+    
+    body::-webkit-scrollbar-track {
+      background: rgb(217, 189, 255); 
+      background-color: transparent;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background-color: rgb(203, 163, 255); 
+      border-radius: 20px; 
+      border: 5px solid transparent; 
+      border-right: 6px solid transparent; 
+    } 
+/* -------------------------------------------------------------------------------------------------- */
+
+
+
+
+    @media(max-width:900px){
+    .reg-box{
+      width: 90%;
+      border: 8px dashed white;
+    }
+    }
+    
+    
+    
+    

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="objava.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="reg-box">
+        <div class="reg-box2"> 
+            <div style="height: 500px; width: 70%;">
+                <div id="map" style="height: 100%;"></div>
+            </div>
+
+            <form id="forma">
+                <!-- <input type="radio" id="bandRadio" name="pinModeType">
+                <label for="bandRadio">Bend</label>
+
+                <input type="radio" id="eventRadio" name="pinModeType">
+                <label for="eventRadio">Dogadjaj</label> -->
+
+                <label>
+                    <input type="radio" class="option-input radio" id="bandRadio" name="pinModeType" />Bend
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio" id="eventRadio" name="pinModeType"/>Dogadjaj
+                  </label>
+
+                 <input type="button" value="Dalje" id="submitButon" onclick="sendForm()">
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCThnoRS0Gt0UvbzjUWfPg-rR374Y5DwfU&callback=initMap&libraries=&v=weekly" defer></script>
+   <script src="mapaJS.js"></script>
+</body>
+</html>

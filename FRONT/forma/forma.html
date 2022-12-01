@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+<body>
+    <div class="reg-box">
+        <div class="reg-box2">   
+                <img src="../media/logo-violet-gray.png" width="30%" height="30%">
+                <h1 class="reg-h1">KREIRAJTE VASU OBJAVU</h1>
+                <div class="linija"><br></div>
+                <div class="div-biranje">
+                    <h2>Izaberite tip objave:</h2>
+                    <input class="radio" type="radio"><label class="text-radio">BEND</label><br>
+                    <input type="radio"><label for="">NASTUP/KONCERT</label><br>
+                </div>
+                <section id="bendP" class="hidden">
+                    <form id="objavaForma">
+                        <input class="polje_unos" type='text' id="imeBenda" placeholder='Ime benda:' /><br>
+
+                        <input class="polje_unos" type='text' id="zanrBenda" placeholder='Zanr benda:'  /><br>
+            
+                        <input class="polje_unos" type='text' id="clanoviBenda" placeholder='Članovi:'  /><br>
+                
+                        <textarea class="polje_unos" id="opisBenda" placeholder='Opis benda:' style="height: 70px;"></textarea><br>
+            
+                        <input class="polje_unos" type='text' id="kontaktBend" placeholder='Kontakt:'  /><br>
+                        <div class="div-biranje" style="margin-bottom:0 ;">
+                            <label for="clanoviDog">Lokacija benda:</label>
+                        </div>
+                    </form>
+                </section>  
+
+                <section id="dogP" class="hidden">
+                    <form id="objavaForma">
+                        <input class="polje_unos" type='text'  id="imeDog" placeholder='Ime događaja:' /><br>
+            
+                        <textarea class="polje_unos" id="opisDog" placeholder='Opis događaja:' style="height: 70px;"></textarea><br>
+                        
+                        <input class="polje_unos" type="number" id="cenaDog" placeholder='Cena ulaznice u dinarima:'  /><br>
+
+                        <div class="div-biranje" style="margin-bottom:0 ;">
+                            <label for="clanoviDog">Datum i vreme događaja:</label>
+                        </div>
+                        <input class="polje_unos"  type="datetime-local" id="datetimeDog" placeholder='Vreme, datum događaja:'/><br>
+            
+                        <input class="polje_unos" type='text'  id="clanoviDog" placeholder='Izviđači:'/><br>
+            
+                        <input class="polje_unos" type='text' id="kontaktdog" placeholder='Kontakt:'  /><br> 
+                        <div class="div-biranje" style="margin-bottom:0 ;">
+                            <label for="clanoviDog">Lokacija događaja:</label>
+                        </div>
+                    </form>
+                </section>
+
+                 <!-- ---------------------------------------MAPA----------------------------------------------- -->
+
+                  <h1>MAPA</h1>
+
+
+
+
+                    <input class="dugmeObjavi" type='button' value="OBJAVI" id="registracija" onclick="ValidirajRegister()" /><br>
+                    
+                    <div class="nazad-div">
+                      <a href="../pocetna/pocetna.html"  lass="dugme1" class="nazad">NAZAD</a>
+                    </div>
+                
+    </div>
+</body>
+</html>

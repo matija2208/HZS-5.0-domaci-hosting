@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pocetna.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Početna</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- -----------------------------nav----------------------------------------- -->
+    <header id="header">
+        <div class="navbar" id="myTopnav">
+            <span class="logo">
+                <a href="./pocetna.html"><img src="../media/Logo-text-white.png"></img></a>
+            </span>
+            <span class="navlinks">
+                <a href="./pocetna.html" class="active">Početna</a>
+                <a href="../Mapa/mapa.html">Mapa</a>
+                <a href="#onama">O nama</a>
+                <a onclick="loginbox()" id = "trebaMiId">Prijavi se</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </span>
+            
+          </div>
+    </header>
+<!-- -----------------------------PLANETIC-------------------------------------------- -->
+<section class="planetic">
+
+    <div class="div-planeta">
+        <div id="loginbox" open="ne">
+            <input class="polje_unos"type='text' id="korisnickoIme_input" placeholder='Korisničko ime ili email:'  /><br>
+            <input class="polje_unos"type='password' id="pass_input" placeholder='Lozinka:'  /><br>
+            <input class="dugme" type='button' value="PRIJAVI SE" id="registracija" onclick="Login()" />
+                <a href="../Registruj se/registracija.html" class="reg-nav">Registruj se</a>
+        </div>
+        <div id="container">
+            <canvas id="c"></canvas>
+            <div id="labels"></div>
+          </div>
+        
+    </div>
+
+
+        <div class="div-pesme" style="left: 0;">
+            <div class="box-pesme" id = "kumZorzo">
+                <h1>UPUTSTVO</h1>
+                <p class="uputstvo">
+                    Kako bi ste pustili pesmu prvo izaberite Region/Jezik na 'planeticu' a posle izaberite pesmu iz ponudjenog menija.
+                </p>
+            </div>
+        </div>
+    
+
+</section>
+
+
+<!-- ----------------------------onama--------------------------------------------------------- -->
+<section id="onama">
+<div class="linija"></div>
+<div class="onama">
+    <div class="opis-sajta">
+         <h1>IDEJA SAJTA</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste tenetur consequuntur impedit voluptate nostrum autem officia non. Dicta ipsum laudantium perferendis ratione exercitationem dolorum sint dignissimos nobis magni aliquam.
+         Voluptatibus dolores perspiciatis non ullam id reiciendis asperiores tempore dignissimos quidem dolorum eos, quaerat nobis. Doloremque laboriosam totam harum, perspiciatis distinctio expedita veritatis, itaque corrupti veniam quo ab pariatur laborum.
+         Error molestiae tenetur enim vitae possimus deserunt architecto cumque sit earum ratione esse perspiciatis sed ullam nesciunt quis, iste incidunt! Sequi obcaecati mollitia ex maiores, aliquid culpa deserunt? Ipsam, vitae?
+         Labore laboriosam magni, minus accusantium, incidunt perspiciatis vitae repellendus maiores odit modi sapiente sequi nulla quasi, necessitatibus a iste quaerat voluptas placeat eaque quia pariatur? Incidunt provident eaque perferendis laudantium?
+         Quam voluptatum vel aliquid amet itaque quis enim nobis, fugit illum, perspiciatis accusantium quibusdam aspernatur facilis iste placeat molestias similique, possimus consequuntur quidem ea. Voluptatibus dolor laborum minima expedita corporis.
+         Excepturi consequuntur sit hic unde. Optio dignissimos laudantium magni perspiciatis facilis doloremque rerum ipsum consequatur esse quis modi dolorum reprehenderit atque ut architecto tempore labore a dolorem, placeat deleniti? Odit!
+        </p>
+    </div>
+    <div class="onama-kartice-div">
+
+        <div class="kartica1">
+            <div class="text-kartica"><b>Milica Zdravković</b><br>Gimnazija Ćuprija <br> Učenik četvrtog razreda</div>
+            <div class="slika-box">
+                <a><img src="../media/Milica.png"></img></a>
+            </div>
+        </div>
+
+        <div class="kartica2">
+            <div class="slika-box">
+                <a><img src="../media/Dusan.png"></img></a>
+            </div>
+            <div class="text-kartica2"><b>Dušan Lazić</b><br>Gimnazija Ćuprija <br> Učenik trećeg razreda</div>
+        </div>
+
+        <div class="kartica1">
+            <div class="text-kartica"><b>Matija Četrović</b><br>Gimnazija Ćuprija <br> Učenik četvrtog razreda</div>
+            <div class="slika-box">
+                <a><img src="../media/Matija.png"></img></a>
+            </div>
+        </div>
+
+
+        <div class="kartica2" style="margin-bottom:0 ;">
+            <div class="slika-box">
+                <a><img src="../media/Luka.png"></img></a>
+            </div>
+            <div class="text-kartica2"><b>Luka Mihajlović</b><br>Gimnazija Ćuprija <br> Učenik četvrtog razreda</div>
+        </div>
+
+    </div> 
+</div>
+
+<div class="linija"></div>
+
+
+
+
+</section>
+
+
+
+<!-- ----------------------------FOOTER--------------------------------------------------------- -->
+
+<footer id="footer">
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100075264743635" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tim404.hzs/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/tim404hzs/" class="pinterest"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://kit.fontawesome.com/b923f4bd13.js" crossorigin="anonymous"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/utils/BufferGeometryUtils.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/controls/OrbitControls.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/../3rdparty/dat.gui.min.js"></script>
+<script src="pocetna.js"></script>
+<script src="../nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body{
+background: rgb(128,29,255);
+background: linear-gradient(153deg, rgba(128,29,255,1) 42%, rgba(56,136,255,1) 100%);
+color: white;
+overflow: overlay;
+
+}
+.reg-box{
+  
+border: 12px dashed white;
+border-radius: 50px;
+ width: 60%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 46px;
+ margin-bottom: 100px;
+ text-align: center;
+ padding:5px;
+} 
+.reg-box2{
+  background-color: white;
+  border-radius: 30px; 
+  margin:10px;
+padding-top: 20px;
+}
+
+.reg-h1{
+    font-size: 30px;
+    color: rgb(128,29,255) ;
+}
+
+.reg-text{
+  color: rgb(128,29,255) ;
+  font-weight: bold;
+}
+
+.polje_unos{
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  margin : 10px;
+  border:1px solid rgba(128,29,255,1) ;
+}
+
+.dugme{
+  border-radius: 10px;
+  padding:5px ;
+  margin-top: 20px;
+  border:1.5px solid rgba(128,29,255,1) ;
+  color:rgba(128,29,255,1) ;
+  font-size: 20px;
+}
+.dugme:hover{
+  color:  rgba(56,136,255,1);
+  border:1.5px solid rgba(56,136,255,1);
+}
+.nazad-div{
+  padding: 30px;
+  
+}
+.nazad{
+  text-decoration: none;
+  color: rgba(128,29,255,1);
+  font-size: 20px;
+}
+.nazad:hover{
+  color:  rgba(56,136,255,1);
+}
+
+body::-webkit-scrollbar {
+  width: 13px;         
+  background-color: transparent;    
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(217, 189, 255); 
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(203, 163, 255); 
+  border-radius: 20px; 
+  border: 5px solid transparent; 
+  border-right: 6px solid transparent; 
+} 
+@media(max-width:900px){
+  .reg-box{
+    width: 85%;
+    border: 10px dashed white;
+  }
+  }
+  
+  .hidden{
+    display: none;
+  }
+
+  .RegexWarning{
+    color: rgb(255, 214, 29) ;
+    text-shadow: -1px -1px 0 rgb(128,29,255), 1px -1px 0 rgb(128,29,255), -1px 1px 0 rgb(128,29,255), 1px 1px 0 rgb(128,29,255);
+
+    font-weight: bold;
+  }
+
+

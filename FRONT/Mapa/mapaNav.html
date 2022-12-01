@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mapa.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Početna</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- -----------------------------nav----------------------------------------- -->
+    <header id="header">
+        <div class="navbar" id="myTopnav">
+            <span class="logo">
+                <a href="./pocetna.html"><img src="../media/Logo-text-white.png"></img></a>
+            </span>
+            <span class="navlinks">
+                <a href="../pocetna/pocetna.html" >Početna</a>
+                <a href="../Mapa/mapaNav.html" class="active">Mapa</a>
+                <a href="#onama">O nama</a>
+                <a onclick="loginbox()" id = "trebaMiId">Prijavi se</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </span>
+            
+          </div>
+    </header>
+<!-- -----------------------------mapa-------------------------------------------- -->
+<section class="mapa">
+    <div class="centriraj">
+         <div style="height: 580px; width: 100%;">
+         <div id="map" style="height: 100%;"></div>
+         </div>
+    </div>
+
+            <form id="forma">
+                <!-- <input type="radio" id="bandRadio" name="pinModeType">
+                <label for="bandRadio">Bend</label>
+
+                <input type="radio" id="eventRadio" name="pinModeType">
+                <label for="eventRadio">Dogadjaj</label> -->
+
+                <label>
+                    <input type="radio" class="option-input radio" id="bandRadio" name="pinModeType" />Bend
+                  </label>
+                  <label>
+                    <input type="radio" class="option-input radio" id="eventRadio" name="pinModeType"/>Dogadjaj
+                  </label>
+
+                 <input type="button" value="Dalje" id="submitButon" onclick="sendForm()">
+            </form>
+     
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCThnoRS0Gt0UvbzjUWfPg-rR374Y5DwfU&callback=initMap&libraries=&v=weekly" defer></script>
+   <script src="mapaJS.js"></script>
+  <div class="linija">
+  </div>
+</section>
+
+
+
+<!-- ----------------------------FOOTER--------------------------------------------------------- -->
+
+<footer id="footer">
+    <div class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100075264743635" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tim404.hzs/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.com/tim404hzs/" class="pinterest"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://kit.fontawesome.com/b923f4bd13.js" crossorigin="anonymous"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/utils/BufferGeometryUtils.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/controls/OrbitControls.js"></script>
+<script src="https://r105.threejsfundamentals.org/threejs/../3rdparty/dat.gui.min.js"></script>
+<script src="pocetna.js"></script>
+<script src="../nav.js"></script>
+</body>
+</html>

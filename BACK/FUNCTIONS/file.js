@@ -1,11 +1,13 @@
-async function getPocetna(req,res)
+const link = '/home/matijacetrovic/HZS-5.0-domaci-hosting/BACK/FILES/';
+
+function getPocetna(req,res)
 {
-    console.log("get pocetna");
-    res.sendFile("pocetna.html");
+    console.log(link+"get pocetna");
+    res.sendFile(link+"pocetna.html");
 
 }
 
-async function get(req,res)
+function get(req,res)
 {
     var file=req.params.file;
     console.log("get "+file);

@@ -2,7 +2,7 @@ const ex = require("express");
 const cors = require("cors");
 
 const app = ex();
-const PORT = 80;
+const PORT = 8080;
 
 const baza=require("./BAZA/baza");
 

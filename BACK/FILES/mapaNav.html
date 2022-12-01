@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mapa.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
-    <title>Mapa</title>
+    <link rel="stylesheet" href="./mapa.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Početna</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,12 +16,12 @@
     <header id="header">
         <div class="navbar" id="myTopnav">
             <span class="logo">
-                <a href="./pocetna.html"><img src="../media/Logo-text-white.png"></img></a>
+                <a href="../pocetna/pocetna.html"><img src="../media/Logo-text-white.png"></img></a>
             </span>
             <span class="navlinks">
-                <a href="pocetna.html" >Početna</a>
-                <a href="mapaNav.html" class="active">Mapa</a>
-                <a href="#onama">O nama</a>
+                <a href="../pocetna/pocetna.html" >Početna</a>
+                <a href="./mapaNav.html" class="active">Mapa</a>
+                <a href="../pocetna/pocetna.html#onama">O nama</a>
                 <a onclick="loginbox()" id = "trebaMiId">Prijavi se</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -33,19 +32,28 @@
     </header>
 <!-- -----------------------------mapa-------------------------------------------- -->
 <section class="mapa">
+    <div id="loginbox" open="ne">
+        <input class="polje_unos"type='text' id="korisnickoIme_input" placeholder='Korisničko ime ili email:'  /><br>
+        <input class="polje_unos"type='password' id="pass_input" placeholder='Lozinka:'  /><br>
+        <input class="dugme" type='button' value="PRIJAVI SE" id="registracija" onclick="Login()" />
+            <a href="../Registruj se/registracija.html" class="reg-nav">Registruj se</a>
+    </div>
     <div class="centriraj">
          <div style="height: 580px; width: 100%;">
          <div id="map" style="height: 100%;"></div>
          </div>
     </div>
 
-            <form id="forma">
+            <div id="sakrijGaBezTokena">
+                <span class="reg-h1"> Da li želite da napravite objavu?</span>
+                <input type="checkbox" id="postCheck" class="option-input" onchange="dalijecekirano()">
+            </div>
+            <form id="forma" class="hidden">
                 <!-- <input type="radio" id="bandRadio" name="pinModeType">
                 <label for="bandRadio">Bend</label>
 
                 <input type="radio" id="eventRadio" name="pinModeType">
                 <label for="eventRadio">Dogadjaj</label> -->
-
                 <label>
                     <input type="radio" class="option-input radio" id="bandRadio" name="pinModeType" />Bend
                   </label>
@@ -54,11 +62,9 @@
                   </label>
 
                  <input type="button" value="Dalje" id="submitButon" onclick="sendForm()">
-            </form>
+            </form> <br><br><br>
      
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCThnoRS0Gt0UvbzjUWfPg-rR374Y5DwfU&callback=initMap&libraries=&v=weekly" defer></script>
-   <script src="mapaJS.js"></script>
+   
   <div class="linija">
   </div>
 </section>
@@ -76,14 +82,13 @@
         </div>
     </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://kit.fontawesome.com/b923f4bd13.js" crossorigin="anonymous"></script>
-<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script>
-<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/utils/BufferGeometryUtils.js"></script>
-<script src="https://r105.threejsfundamentals.org/threejs/resources/threejs/r105/js/controls/OrbitControls.js"></script>
-<script src="https://r105.threejsfundamentals.org/threejs/../3rdparty/dat.gui.min.js"></script>
-<script src="pocetna.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCThnoRS0Gt0UvbzjUWfPg-rR374Y5DwfU&callback=initMap&libraries=&v=weekly" defer></script>
+<script src="imgur.js"></script>
+<script src="mapaJS.js"></script>
 <script src="../nav.js"></script>
 </body>
 </html>

@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="objava.css">
     <link rel="stylesheet" href="style-imgur.css">
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
-    <title>Objava</title>
+    <title>Document</title>
 
     <style>
         .hidden{
@@ -34,7 +33,8 @@
             
                     <textarea class="polje_unos" id="opisBenda" placeholder='Opis benda:' style="height: 70px;"></textarea><br>
         
-                    <input class="polje_unos" type='text' id="kontaktBend" placeholder='Kontakt:'  /><br>
+                    <input class="polje_unos" type='text' id="telefonBend" placeholder='telefon:'  /><br>
+                    <input class="polje_unos" type='text' id="mailBenda" placeholder='email:'  /><br>
 
                 </form>
             </section>
@@ -52,23 +52,25 @@
                     </div>
                     <input class="polje_unos"  type="datetime-local" id="datetimeDog" placeholder='Vreme, datum događaja:'/><br>
         
-                    <input class="polje_unos" type='text'  id="clanoviDog" placeholder='Izviđači:'/><br>
+                    <input class="polje_unos" type='text'  id="clanoviDog" placeholder='Izvođači:'/><br>
         
-                    <input class="polje_unos" type='text' id="kontaktdog" placeholder='Kontakt:'  /><br> 
+                    <input class="polje_unos" type='text' id="telefon" placeholder='telefon:'  /><br> 
+                    <input class="polje_unos" type='text' id="mail" placeholder='email:'  /><br> 
                 </form>
             </section>
-            <label for="">Unesite sliku: </label>
+            <label>Unesite sliku: </label>
             <div class="dropzone">
                 <div class="info"></div>
               </div>
               <br>
-            <input class="dugmeObjavi" type='button' value="OBJAVI" id="registracija" onclick="ValidirajRegister()" /><br>
+            <input class="dugmeObjavi" type='button' value="OBJAVI" id="registracija" onclick="UnesiPin()" /><br>
                     
             <div class="nazad-div">
                 <a href="mapaNav.html"  lass="dugme1" class="nazad">NAZAD</a>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="imgur.js"></script>
     <script src="mapaJS.js"></script>
 </body>

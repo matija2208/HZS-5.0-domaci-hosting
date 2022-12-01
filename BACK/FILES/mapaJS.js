@@ -2,14 +2,20 @@ const LINK = 'http://404music.cf';
 const checkbox = document.getElementById('postCheck');
 var makingPost;
 
-function dalijecekirano(){
-    if (document.getElementById("postCheck").checked) {
-        makingPost = true;
-        document.getElementById("forma").classList.remove("hidden");
-      } else {
-        makingPost = false;
-        document.getElementById("forma").classList.add("hidden");
-    }
+try{
+    checkbox.addEventListener('change', (event) => {
+        if (event.currentTarget.checked) {
+          makingPost = true;
+          document.getElementById("forma").classList.remove("hidden");
+        } else {
+          makingPost = false;
+          document.getElementById("forma").classList.add("hidden");
+        }
+      })
+}
+catch(err)
+{
+    console.log(err.message);
 }
 
 

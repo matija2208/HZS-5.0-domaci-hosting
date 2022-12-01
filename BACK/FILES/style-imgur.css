@@ -16,41 +16,6 @@
         margin-left: 5%;
     }
 }
-.formHeadings{
-    text-align: left;
-    vertical-align: middle;
-    padding-top: 25px; 
-    margin-left: 2%;
-  }
-  
-  .dropzone {
-    border: 4px dashed var(--svetla);
-    height: 200px;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 50%;
-    margin-bottom: 20px;
-  
-    color: var(--svetla);
-    font-weight: bold;
-  }
-  
-  .info {
-    margin-top: 11%;
-  }
-  
-  .dropzone p {
-    /*height: 100%;*/
-    /*line-height: 200px;*/
-    margin: 0%;
-    text-align: center;
-    width: 100%
-  }
-  
-  .dropzone_narrate{
-      font-size: 30px;
-      color: var(--svetla);
-      margin-top: 0px;
-      margin-left: 2px;
-  }
+.img{
+    max-width: 500px;
+}

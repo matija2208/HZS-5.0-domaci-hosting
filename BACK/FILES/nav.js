@@ -70,8 +70,8 @@ async function ifLogedIn()
 
             let div = `
                 <h1 class="logboxdata">${user.username}</h1>
-                <a class="logboxdatalink" href = "../IzmeniNalog/IzmeniNalog.html">Izmeni Nalog</a><br>
-                <a class="logboxdatalink" href = "../IzmeniNalog/IzmeniPassword.html">Izmeni Password</a><br><br>
+                <a class="logboxdatalink" href = "IzmeniNalog.html">Izmeni Nalog</a><br>
+                <a class="logboxdatalink" href = "IzmeniPassword.html">Izmeni Lozinku</a><br><br>
                 <input class="dugme" type="button" value="ODJAVI SE" onclick="OdjaviSe()"/>
                 <input class="dugme" type="button" value="OBRISI" onclick="Pitaj()"/>
             `
@@ -89,7 +89,7 @@ function OdjaviSe()
             <input class="polje_unos"type='text' id="korisnickoIme_input" placeholder='Korisničko ime ili email:'  /><br>
             <input class="polje_unos"type='password' id="pass_input" placeholder='Lozinka:'  /><br>
             <input class="dugme" type='button' value="PRIJAVI SE" id="registracija" onclick="Login()" />
-            <a href="../Registruj se/registracija.html" class="reg-nav">Registruj se</a>
+            <a href="registracija.html" class="reg-nav">Registruj se</a>
             `
     document.getElementById("loginbox").innerHTML=div;
 

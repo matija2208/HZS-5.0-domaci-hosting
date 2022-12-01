@@ -2,7 +2,7 @@
 // from https://r105.threejsfundamentals.org/threejs/threejs-align-html-elements-to-3d-globe.html
 
 'use strict';
-const LINK = "http://localhost";
+const LINK = "http://404music.cf";
 
 /* global THREE, dat */
 function main() {
